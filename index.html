@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="X^{2};Localizer: Cross-grained Alignment for Progressive Cross-view Video Geo-localization">
+  <meta name="keywords" content="Visual Localization, Vision-Based Navigation, Cross-View, Contrastive Learning, Video Retrieval">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X&sup2;Localizer: Cross-grained Alignment for Progressive Cross-view Video Geo-localization</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <!-- Result Gallery -->
+  <link rel="stylesheet" href="./static/css/result-gallery.css">
+  <!-- Result Gallery -->
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/X2Loc_mini.png" type="image/png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title is-flex is-align-items-center is-justify-content-center">
+            <img src="./static/images/X2Loc.png" alt="X2Localizer Logo" style="height: 96px; margin-right: 12px;">
+            X&sup2;Localizer: Cross-grained Alignment for Progressive Cross-view Video Geo-localization
+          </h1>          
+          <div class="publication-venue">BMVC 2026</div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.zengzichao.com">Zichao Zeng<sup>1,2</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://wakinghours-github.github.io">Weijia Fan<sup>2,4,5</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://cvhci.iar.kit.edu/people_2407.php">Yufan Chen<sup>2</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://profiles.ucl.ac.uk/96956-june-moh-goo">June Moh Goo<sup>1</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://zhengjunwei.com">Junwei Zheng<sup>2,&dagger;</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://cvhci.iar.kit.edu/people_2408.php">Ruiping Liu<sup>2</sup></a>,</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://cvhci.iar.kit.edu/people_2123.php">Kunyu Peng<sup>2</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://jamycheung.github.io">Jiaming Zhang<sup>3,&dagger;</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://cvhci.iar.kit.edu/people_596.php">Rainer Stiefelhagen<sup>1,2</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://profiles.ucl.ac.uk/27481-jan-boehm">Jan Boehm<sup>1</sup></a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">1. Department of Civil, Environmental and Geomatic Engineering, University College London</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">2. Institute for Anthropomatics and Robotics, Karlsruhe Institute of Technology</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">3. School of AI and Robotics, Hunan University</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">4. Department of Computing Science, University of Alberta</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">5. College of Computer Science and Software Engineering, Shenzhen University</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">&dagger; Corresponding authors</span>
+          </div>
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/document/11302767"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="-TODO-"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/zichaozeng/MuSSel-V_LAD"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Cross-view Video Geo-localization (CVG) aims to localize ground-view videos by retrieving their corresponding geo-tagged aerial images. However, CVG approaches rely on fixed-length inputs and post-hoc refinement, hindering online-oriented localization under partial or dynamic observations. 
+            In this work, we formulate Progressive Cross-view Video Geo-localization (PCVG) as a deployment-oriented extension and evaluation protocol of CVG, enabling localization under varying temporal budgets, prefix-based inference, random-start evaluation, and long-range localization with interruptions.
+            To explore PCVG, we introduce X&sup2Localizer, a cross-grained alignment framework that jointly supervises global prefix-to-aerial retrieval and token-aggregated frame--aerial-tile matching with a budget-dependent asymmetric objective.
+            Furthermore, we introduce a Sliding-Window Re-Localization (SWRL) strategy that dynamically refreshes candidate regions for failure recovery and long-range deployment without full-sequence reprocessing.
+            Extensive experiments show that X&sup2Localizer preserves conventional full-video performance, with marginal gains of +0.1 Recall@1 and +0.3 Recall@10, while substantially improving early localization.
+            In the challenging single-frame setting, X&sup2Localizer improves coarse retrieval by +4.7 Recall@1 and +11.5 Recall@10 over the previous state-of-the-art method. 
+            With SWRL, our approach further enables robust progressive localization under random-start and long-distance scenarios, narrowing the gap between benchmark evaluation and real-world deployment.          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Acknowledgement. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">🥰 Acknowledgement</h2>
+        <div class="content has-text-justified">
+          <p>
+            X&sup2;Localizer is built upon prior works including <a href="https://github.com/manupillai308/GAReT">GAReT</a>, </a><a href="https://github.com/svyas23/GAMa?tab=readme-ov-file">GAMa</a>, <a href="https://github.com/Jeff-Zilence/TransGeo2022">TransGeo</a>, and <a href="https://github.com/xuguohai/X-CLIP">X-CLIP</a>. We sincerely thank the authors for making their work publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Acknowledgement. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">📃 BibTeX</h2>
+    <pre><code>@article{zeng2026x,
+        title={X²Localizer: Cross-Modal Localization with Dilated Superpixel Aggregation},
+        author={Zeng, Zichao and Fan, Weijia and Chen, Yufan and Goo, June Moh and Zheng, Junwei and Liu, Ruiping and Peng, Kunyu and Zhang, Jiaming and Stiefelhagen, Rainer and Boehm, Jan},
+        year={2026},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a> and adapted from <a 
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            We sincerely express our gratitude to <a
+            href="https://keunhong.com/">Keunhong Park</a> 
+            for developing and making this template openly available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
